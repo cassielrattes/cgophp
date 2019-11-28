@@ -7,80 +7,95 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
   </head>
   <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+  <a class="navbar-brand" href="barradenavegacao"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Contato</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      
       </li>
     </ul>
   </div>
 </nav>
+<br>
+<br>
 
-  <img style="width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;"
-    src="https://i.ibb.co/dbWLcX5/image-url.jpg" />
+<!-- Carousel -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://i.ibb.co/0pN4pxz/IMG-1383.jpg"  alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://i.ibb.co/jbB9qBX/IMG-1392.jpg"  alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://i.ibb.co/zrts2hf/IMG-1390.jpg"  alt="Terceiro Slide">
+    </div>    
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
     <br>
     <br>
-
-
+    
     <div class="row h-100 justify-content-center">
     <div class="col col-md-2 zoom">
       <h3 class="text-center">Sobre</h3>
       <a href="#">
-        <img class="img-fluid rounded-circle" src="https://icon-library.net/images/about-icon-png/about-icon-png-7.jpg">
+        <img class="img-fluid rounded-circle" src="https://i.ibb.co/WpDF2qy/Logo-TCC.png">
       </a>
-      <h5 class="text-center">ola</h5>
-      <p class="text-center">Ola</p>
+      <h5 class="text-center">Para obter mais informações.</h5>      
     </div>
     <div class="col col-md-2 zoom">
       <h3 class="text-center">Gráficos</h3>
       <a href="#">
         <img class="img-fluid rounded-circle"
-          src="https://static.vecteezy.com/system/resources/previews/000/602/438/non_2x/drawing-graphs-beautiful-line-black-icon-vector.jpg">
+          src="https://i.ibb.co/dbY1544/Grafico.png">
       </a>
-      <h5 class="text-center">ola</h5>
-      <p class="text-center">Ola</p>
-    </div>
-    <div class="col col-md-2 zoom">
-      <h3 class="text-center">Contato</h3>
-      <a href="#">
-        <img class="img-fluid rounded-circle" src="https://i.ibb.co/4PktsyT/21321.jpg">
-      </a>
-      <h5 class="text-center">ola</h5>
-      <p class="text-center">Ola</p>
-    </div>
+      <h5 class="text-center">Acompanhe o andamento da obra através de gráficos.</h5>      
+    </div>    
     <div class="col col-md-2 zoom">
       <h3 class="text-center">Projetos</h3>
       <a href="#">
-        <img class="img-fluid rounded-circle" src="https://http2.mlstatic.com/D_NQ_NP_644795-MLB26481464514_122017-O.webp">
+        <img class="img-fluid rounded-circle" src="https://i.ibb.co/G9TnVJ2/project.png">
       </a>
-      <h5 class="text-center">ola</h5>
-      <p class="text-center">Ola</p>
+      <h5 class="text-center">Conheça alguns dos nossos projetos.</h5>      
+    </div>
+    <div class="col col-md-2 zoom">
+      <h3 class="text-center">Suporte</h3>
+      <a href="#">
+        <img class="img-fluid rounded-circle" src="https://i.ibb.co/4FdKZkJ/Func.png">
+      </a>
+      <h5 class="text-center">Precisa de ajuda ? Suporte 24 horas</h5>      
     </div>
   </div>
 
