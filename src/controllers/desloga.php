@@ -2,6 +2,6 @@
 
 session_start();
 session_destroy();
-header('Location: https://localhost:3000');
+header('Location: /cgophp/login.php');
 
 ?>

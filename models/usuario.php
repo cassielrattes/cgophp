@@ -1,12 +1,13 @@
 <?php
 class Usuario {
-    public $rm, $nome, $senha;
-    static function criaUsuario($rm,$nome){
+    public $id, $nome,$tipo, $senha;
+    static function criaUsuario($id,$nome,$tipo,$senha){
         $usuario = new Usuario();
-        $usuario->rm = $rm;
+        $usuario->id = $id;
+        $usuario->usuario = $usuario;
+        $usuario->senha = $senha;
         $usuario->nome = $nome;
         $usuario->tipo = $tipo;
-        $usuario-> = $senha;
         return $usuario;
     }
     function setarSenha($senha){

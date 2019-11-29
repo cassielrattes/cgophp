@@ -3,26 +3,26 @@ require_once "usuario.php";
 
 class UsuarioDAO {
     private $con;
-    public $tabela = "tb_usuarios";
+    public $tabela = "usuarios";
     function __construct($con){
         $this->con = $con;
     }
     function save($usuario){
-        $sql = "INSERT INTO ".$this->tabela." (rm,nome,senha) values (?,?,?,?,?)";
+        $sql = "INSERT INTO ".$this->tabela." (id,usuario,senha,nome,tipo) values (?,?,?,?,?)";
         $stmt = $this->con->prepare($sql); 
-        $stmt->execute([$usuario->rm, $usuario->nome, $usuario->senha]);
+        $stmt->execute([$usuario->id, $usuario->usuario, $usuario->senha, $usuario->nome, $usuario->tipo]);
     }
 
     function update($usuario){
-        $sql = "UPDATE ".$this->tabela." SET nome=?, where rm=?";
+        $sql = "UPDATE ".$this->tabela." SET nome=?, where id=?";
         $stmt = $this->con->prepare($sql);
-        $stmt->execute([$usuario->nome, $usuario->rm]);
+        $stmt->execute([$usuario->nome, $usuario->id]);
     }
 
-    function delete($rm){
-        $sql = "DELETE FROM ".$this->tabela. " where rm=?";
+    function delete($id){
+        $sql = "DELETE FROM ".$this->tabela. " where id=?";
         $stmt = $this->con->prepare($sql);
-        $stmt->execute([$rm]);
+        $stmt->execute([$id]);
     }
 
     function readAll(){
@@ -31,18 +31,18 @@ class UsuarioDAO {
         $stmt->execute();
         $results = $stmt->fetchAll(PDO::FETCH_CLASS, "Usuario");
         return $results;
-        
     }
 
-    function buscaPorUsuarioESenha($rm, $senha){
-        
-        $sql = "SELECT * FROM ".$this->tabela. " where rm=? and senha=?";
+    function buscaPorUsuarioESenha($usuario, $senha){
+        echo("alo");
+        $sql = "SELECT * FROM ".$this->tabela. " where usuario=? and senha=?";
         $stmt = $this->con->prepare($sql);
-        $stmt->execute([$rm,$senha]);
+        $stmt->execute([$usuario,$senha]);
         $results = $stmt->fetchAll(PDO::FETCH_CLASS, "Usuario");
         if(count($results) > 0){
             return $results[0];
         } else {
+            echo("fafa");
             return null;
         }
     }
