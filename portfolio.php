@@ -16,20 +16,7 @@ body {
   background-size: cover;
 }
 
-
-
 </style>
-
-
-
-
-
-
-
-
-
-
-
 
 <nav class=" my-nav navbar navbar-dark navbar-expand-lg ">
       <div class="container">
