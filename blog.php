@@ -68,7 +68,7 @@ $portfolios = array(
         <img class="card-img-top" src="<?=$cartao->imagem?>" alt="Card image cap">
         <div class="card-body">
           <h2 class="card-title text-center"><?=$cartao->titulo?></h2>
-          <p class="card-text text-justify"><?=$cartao->descricao?></p>
+          <p class="card-text text-center"><?=$cartao->descricao?></p>
         </div>
       </div>
       <?php } ?>
@@ -126,10 +126,10 @@ $portfolios = array(
 
       <!-- Side Widget -->
       <div class="card my-4">
-        <h5 class="card-header">Sobre</h5>
+        <h5 class="card-header">Autor</h5>
+        <img class="rounded-circle img-fluid mx-auto mt-3" style="height:150px; width:150px" src="https://i.ibb.co/ZJCywsk/Image-URL.jpg">
         <div class="card-body">
-          <h5>Cassiel R. Cortez</h5>
-          <p>aloalaoaoao</p>
+          <h5 class="text-center">Cassiel R. Cortez</h5>
         </div>
       </div>
 
