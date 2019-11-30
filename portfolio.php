@@ -12,11 +12,18 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+<<<<<<< HEAD
 </style>
 
 <!-- Navbar -->
 
 <nav class=" my-nav navbar navbar-light navbar-expand-lg ">
+=======
+
+</style>
+
+<nav class=" my-nav navbar navbar-dark navbar-expand-lg ">
+>>>>>>> 2f91e3a9c0f2d1bec733d4d21944f529de54a06e
       <div class="container">
       <a class="navbar-brand" href="portfolio.php"><img class="img-fluid rounded-circle" src="https://i.ibb.co/jrPQGKr/logoTCC.png" alt="Logo da Empresa."></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
