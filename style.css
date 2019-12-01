@@ -1,0 +1,32 @@
+body {
+    min-width: 400px;
+    background-image: linear-gradient(white, rgb(232, 236, 248), rgb(200, 200, 255))
+}
+
+.my-nav {
+    z-index: 10;
+    width: 100%;
+}
+
+.subcard {
+    padding: 5px;
+}
+
+
+#author {
+    position: fixed;
+    right: 2%;
+    width: 30vw;
+    top: 40%;
+}
+
+@media only screen and (max-width: 770px) {
+    #author {
+        position: relative;
+        width: 110vw;
+        left: 1%;
+    }
+}
+
+
+#btn {}

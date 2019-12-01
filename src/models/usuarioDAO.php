@@ -8,21 +8,21 @@ class UsuarioDAO {
         $this->con = $con;
     }
     function save($usuario){
-        $sql = "INSERT INTO ".$this->tabela." (rm,nome,senha) values (?,?,?,?,?)";
+        $sql = "INSERT INTO ".$this->tabela." (id,nome,senha) values (?,?,?,?,?)";
         $stmt = $this->con->prepare($sql); 
-        $stmt->execute([$usuario->rm, $usuario->nome, $usuario->senha]);
+        $stmt->execute([$usuario->id, $usuario->nome, $usuario->senha]);
     }
 
     function update($usuario){
-        $sql = "UPDATE ".$this->tabela." SET nome=?, where rm=?";
+        $sql = "UPDATE ".$this->tabela." SET nome=?, where id=?";
         $stmt = $this->con->prepare($sql);
-        $stmt->execute([$usuario->nome, $usuario->rm]);
+        $stmt->execute([$usuario->nome, $usuario->id]);
     }
 
-    function delete($rm){
-        $sql = "DELETE FROM ".$this->tabela. " where rm=?";
+    function delete($id){
+        $sql = "DELETE FROM ".$this->tabela. " where id=?";
         $stmt = $this->con->prepare($sql);
-        $stmt->execute([$rm]);
+        $stmt->execute([$id]);
     }
 
     function readAll(){
@@ -34,11 +34,11 @@ class UsuarioDAO {
         
     }
 
-    function buscaPorUsuarioESenha($rm, $senha){
+    function buscaPorUsuarioESenha($id, $senha){
         
-        $sql = "SELECT * FROM ".$this->tabela. " where rm=? and senha=?";
+        $sql = "SELECT * FROM ".$this->tabela. " where id=? and senha=?";
         $stmt = $this->con->prepare($sql);
-        $stmt->execute([$rm,$senha]);
+        $stmt->execute([$id,$senha]);
         $results = $stmt->fetchAll(PDO::FETCH_CLASS, "Usuario");
         if(count($results) > 0){
             return $results[0];
