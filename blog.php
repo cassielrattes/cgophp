@@ -1,12 +1,14 @@
 <?php 
 class Portfolio{
-  public $titulo, $imagem, $descricao;
-  function __construct($titulo, $imagem, $descricao)
+  public $titulo, $imagem, $descricao, $modal, $modalId;
+  function __construct($titulo, $imagem, $descricao, $modal, $modalId)
   {
     $this->titulo = $titulo;
     $this->imagem = $imagem;
     $this->descricao = $descricao;
-    // $this->modal = $modal;
+    $this->modal = $modal;
+    $this->modalId = $modalId;
+
   }
 }
 
@@ -17,15 +19,18 @@ $portfolios = array(
   /* Titulo */'Tipos de navegação no React Native',
   /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
   /* Descrição */
-  ''
+  '1',
+  /* Modal */'#modal1',
+  /* Modal */'modal1'
   ),
-
   new Portfolio
   (
-  /* Titulo */'Paginação com React Router Dom32',
+  /* Titulo */'Paginação com React Router Dom',
   /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
   /* Descrição */
-  ''
+  '2',
+  /* Modal */'#modal2',
+  /* Modal */'modal2'
   ),  
 
   new Portfolio
@@ -33,7 +38,9 @@ $portfolios = array(
   /* Titulo */'Serverless: Quando utilizar e aplicações com NodeJS',
   /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
   /* Descrição */
-  ''
+  '3',
+  /* Modal */'#modal3',
+  /* Modal */'modal3'
   ),  
 
   new Portfolio
@@ -41,52 +48,19 @@ $portfolios = array(
   /* Titulo */'Atualizando aplicações React Native para a última versão',
   /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
   /* Descrição */
-  ''
+  '4',
+  /* Modal */'#modal4',
+  /* Modal */'modal4'
   ),
   new Portfolio
   (
   /* Titulo */'Atualizando aplicações React Native para a última versão',
   /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
   /* Descrição */
-  ''
-  ),
-  new Portfolio
-  (
-  /* Titulo */'Atualizando aplicações React Native para a última versão',
-  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
-  /* Descrição */
-  ''
-  ),  new Portfolio
-  (
-  /* Titulo */'Atualizando aplicações React Native para a última versão',
-  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
-  /* Descrição */
-  ''
-  ),  new Portfolio
-  (
-  /* Titulo */'Atualizando aplicações React Native para a última versão',
-  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
-  /* Descrição */
-  ''
-  ),  new Portfolio
-  (
-  /* Titulo */'Atualizando aplicações React Native para a última versão',
-  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
-  /* Descrição */
-  ''
-  ),  new Portfolio
-  (
-  /* Titulo */'Atualizando aplicações React Native para a última versão',
-  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
-  /* Descrição */
-  ''
-  ),  new Portfolio
-  (
-  /* Titulo */'Atualizando aplicações React Native para a última versão',
-  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
-  /* Descrição */
-  ''
-  ),
+  '5',
+  /* Modal */'#modal5',
+  /* Modal */'modal5'
+  )
 );
 
 $principal = $portfolios[0];
@@ -96,31 +70,31 @@ array_splice($portfolios, 0,1);
 <?php include_once('./headFooter/head.php') ?>
 
 <nav class=" my-nav navbar navbar-light navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="portfolio.php"><img class="rounded-circle img-fluid" src="https://i.ibb.co/f04HKqX/Logo-Cassiel-TCC.png" height="100px"
-          width="100px" alt="Logo da Empresa."></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link h4" href="#">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link h4" href="#">Aplicativo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link h4" href="#">Sobre o Projeto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link h4" href="#">Suporte</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container">
+    <a class="navbar-brand" href="portfolio.php"><img class="rounded-circle img-fluid"
+        src="https://i.ibb.co/f04HKqX/Logo-Cassiel-TCC.png" height="100px" width="100px" alt="Logo da Empresa."></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link h4" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h4" href="#">Aplicativo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h4" href="#">Sobre o Projeto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h4" href="#">Suporte</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
 <div class="jumbotron jumbotron-fluid" style="background-color:rgb(88,85,112)">
   <div class="container">
@@ -137,50 +111,95 @@ array_splice($portfolios, 0,1);
       </h1>
       <div class="row">
 
-        <div class="col-md-12 card mb-4">
+        <div class="col-md-12 card mb-2">
           <img class="card-img-top" src="<?=$principal->imagem?>" alt="Card image cap">
           <div class="card-body">
             <h2 class="card-title text-center"><?=$principal->titulo?></h2>
-            <p class="card-text text-center"><?=$principal->descricao?></p>
-            <div class="text-right" >
-                <a href="<?=$principal->imagem?>" class="btn btn-danger" id="btn" style=""><h6>Saiba mais</h6></a>
-              </div>
+            <div class="text-right">
+              <button type="button" class="btn btn-danger" data-toggle="modal"
+                data-target="<?=$principal->modal?>">Open Modal</button>
+            </div>
           </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="<?=$principal->modalId?>" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><?=$principal->titulo?></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="card-text text-center"><?=$principal->descricao?></p>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
         <?php foreach($portfolios as $cartao){ ?>
-        <div class="col-md-4 card mb-4 ml-0">
+        <div class="col-md-4 card">
           <div class="subcard">
             <img class="card-img-top" src="<?=$cartao->imagem?>" alt="Card image cap">
             <div class="card-body">
               <h3 class="card-title"><?=$cartao->titulo?></h3>
-              <!-- <p class="card-text text-center"><?=$cartao->descricao?></p> -->
-              <div class="text-right" >
-                <a href="<?=$cartao->imagem?>" class="btn btn-danger" id="btn" style=""><h6>Saiba mais</h6></a>
+              <div class="text-right">
+                <button type="button" class="btn btn-danger" data-toggle="modal"
+                  data-target="<?=$cartao->modal?>">Open Modal</button>
               </div>
             </div>
           </div>
-
         </div>
-        <?php } ?>
-      </div>
-      
-    </div>
+        <!-- Modal -->
+        <div class="modal fade" id="<?=$cartao->modalId?>" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel"><?=$cartao->titulo?></h1>
+              </div>
+              <div class="modal-body">
+              <img class="card-img-top" src="<?=$cartao->imagem?>">
 
-    <div id="author">
-        <div class="card my-4">
-          <h5 class="card-header">Buscar</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Buscando...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
+                <p class="card-text text-center mt-5"><?=$cartao->descricao?></p>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
+        <?php } ?>
+      </div>
+    </div>
+
+    <div id="author">
+      <div class="card my-4">
+        <h5 class="card-header">Buscar</h5>
+        <div class="card-body">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscando...">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
+      </div>
 
 
-        <!-- <div class="card my-4">
+
+
+      <!-- <div class="card my-4">
           <h5 class="card-header">Categories</h5>
           <div class="card-body">
             <div class="row">
@@ -214,21 +233,21 @@ array_splice($portfolios, 0,1);
           </div>
         </div> -->
 
-        <div class="card my-4">
-          <h5 class="card-header">Autor</h5>
-          <img class="rounded-circle img-fluid mx-auto mt-3" style="height:150px; width:150px"
-            src="https://i.ibb.co/ZJCywsk/Image-URL.jpg">
-          <div class="card-body">
-            <h5 class="text-center">Cassiel R. Cortez</h5>
-          </div>
+      <div class="card my-4">
+        <h5 class="card-header">Autor</h5>
+        <img class="rounded-circle img-fluid mx-auto mt-3" style="height:150px; width:150px"
+          src="https://i.ibb.co/ZJCywsk/Image-URL.jpg">
+        <div class="card-body">
+          <h5 class="text-center">Cassiel R. Cortez</h5>
         </div>
-
- 
-
-
-
       </div>
+
+
+
+
+
     </div>
+  </div>
 </div>
 
 
