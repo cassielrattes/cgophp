@@ -112,7 +112,7 @@ array_splice($portfolios, 0,1);
       <div class="row">
 
         <div class="col-md-12 card mb-2">
-          <img class="card-img-top" src="<?=$principal->imagem?>" alt="Card image cap">
+          <img class="card-img-top subcard" src="<?=$principal->imagem?>" alt="Card image cap">
           <div class="card-body">
             <h2 class="card-title text-center"><?=$principal->titulo?></h2>
             <div class="text-right">
