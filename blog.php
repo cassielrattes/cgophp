@@ -116,8 +116,8 @@ array_splice($portfolios, 0,1);
           <div class="card-body">
             <h2 class="card-title text-center"><?=$principal->titulo?></h2>
             <div class="text-right">
-              <button type="button" class="btn btn-danger" data-toggle="modal"
-                data-target="<?=$principal->modal?>">Open Modal</button>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="<?=$principal->modal?>">Open
+                Modal</button>
             </div>
           </div>
         </div>
@@ -125,17 +125,17 @@ array_splice($portfolios, 0,1);
         <!-- Modal -->
         <div class="modal fade" id="<?=$principal->modalId?>" tabindex="-1" role="dialog"
           aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"><?=$principal->titulo?></h5>
+                <h1 class="modal-title" id="exampleModalLabel"><?=$principal->titulo?></h1>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true"></span>
                 </button>
               </div>
               <div class="modal-body">
+                <img class="card-img-top" src="<?=$principal->imagem?>">
                 <p class="card-text text-center"><?=$principal->descricao?></p>
-
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -153,8 +153,8 @@ array_splice($portfolios, 0,1);
             <div class="card-body">
               <h3 class="card-title"><?=$cartao->titulo?></h3>
               <div class="text-right">
-                <button type="button" class="btn btn-danger" data-toggle="modal"
-                  data-target="<?=$cartao->modal?>">Open Modal</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="<?=$cartao->modal?>">Open
+                  Modal</button>
               </div>
             </div>
           </div>
@@ -168,10 +168,8 @@ array_splice($portfolios, 0,1);
                 <h1 class="modal-title" id="exampleModalLabel"><?=$cartao->titulo?></h1>
               </div>
               <div class="modal-body">
-              <img class="card-img-top" src="<?=$cartao->imagem?>">
-
+                <img class="card-img-top" src="<?=$cartao->imagem?>">
                 <p class="card-text text-center mt-5"><?=$cartao->descricao?></p>
-
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
