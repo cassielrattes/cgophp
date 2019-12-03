@@ -1,0 +1,44 @@
+body {
+    min-width: 400px;
+    background-image: linear-gradient(white, rgb(232, 236, 248), rgb(200, 200, 255))
+}
+
+.my-nav {
+    z-index: 10;
+    width: 100%;
+}
+
+
+
+#author {
+    position: fixed;
+    right: 2%;
+    width: 30vw;
+    top: 40%;
+}
+
+@media only screen and (max-width: 1300px) {
+    #author {
+        position: relative;
+        width: 100%;
+        right: 1%;
+    }
+}
+
+.css {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .css {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+}
+
+
+.fixed {}
