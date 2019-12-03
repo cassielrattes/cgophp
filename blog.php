@@ -21,7 +21,7 @@ $portfolios = array(
   /* Descrição */
   '1',
   /* Modal */'#modal1',
-  /* Modal */'modal1'
+  /* ModalId */'modal1'
   ),
   new Portfolio
   (
@@ -30,7 +30,7 @@ $portfolios = array(
   /* Descrição */
   '2',
   /* Modal */'#modal2',
-  /* Modal */'modal2'
+  /* ModalId */'modal2'
   ),  
 
   new Portfolio
@@ -40,7 +40,7 @@ $portfolios = array(
   /* Descrição */
   '3',
   /* Modal */'#modal3',
-  /* Modal */'modal3'
+  /* ModalId */'modal3'
   ),  
 
   new Portfolio
@@ -50,7 +50,7 @@ $portfolios = array(
   /* Descrição */
   '4',
   /* Modal */'#modal4',
-  /* Modal */'modal4'
+  /* ModalId */'modal4'
   ),
   new Portfolio
   (
@@ -59,8 +59,17 @@ $portfolios = array(
   /* Descrição */
   '5',
   /* Modal */'#modal5',
-  /* Modal */'modal5'
-  )
+  /* ModalId */'modal5'
+  ),
+  new Portfolio
+  (
+  /* Titulo */'Atualizando aplicações React Native para a última versão',
+  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
+  /* Descrição */
+  '6',
+  /* Modal */'#modal6',
+  /* ModalId */'modal6'
+  ),
 );
 
 $principal = $portfolios[0];
@@ -80,16 +89,16 @@ array_splice($portfolios, 0,1);
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link h4" href="#">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link h4" href="/cgophp/index.php">Inicio<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link h4" href="#">Aplicativo</a>
+          <a class="nav-link h4" href="/cgophp/portfolio.php">Aplicativo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link h4" href="#">Sobre o Projeto</a>
+          <a class="nav-link h4" href="/cgophp/blog.php">Sobre o Projeto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link h4" href="#">Suporte</a>
+          <a class="nav-link h4" href="/cgophp/portfolio.php">Suporte</a>
         </li>
       </ul>
     </div>
@@ -104,8 +113,8 @@ array_splice($portfolios, 0,1);
 
 
 <div class="ml-5 mr-5">
-  <div class="row">
-    <div class="col-md-8">
+  <div class="row" id="full">
+    <div class="css">
       <h1 class="my-4">Ultimas Noticias /
         <small>Edificações</small>
       </h1>
@@ -144,19 +153,21 @@ array_splice($portfolios, 0,1);
           </div>
         </div>
 
-
+        <!-- <div class="text-right">
+                <button type="button" class="btn btn-danger mt-5" data-toggle="modal" data-target="<?=$cartao->modal?>">Open
+                  Modal</button>
+              </div> -->
 
         <?php foreach($portfolios as $cartao){ ?>
         <div class="col-md-4 card">
-          <div class="subcard">
+          <div>
             <img class="card-img-top" src="<?=$cartao->imagem?>" alt="Card image cap">
             <div class="card-body">
               <h3 class="card-title"><?=$cartao->titulo?></h3>
-              <div class="text-right">
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="<?=$cartao->modal?>">Open
-                  Modal</button>
-              </div>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="<?=$cartao->modal?>">Open
+                Modal</button>
             </div>
+
           </div>
         </div>
         <!-- Modal -->

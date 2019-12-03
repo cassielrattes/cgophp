@@ -8,9 +8,6 @@ body {
     width: 100%;
 }
 
-.subcard {
-    padding: 5px;
-}
 
 
 #author {
@@ -20,10 +17,28 @@ body {
     top: 40%;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1300px) {
     #author {
         position: relative;
-        width: 110vw;
-        left: 1%;
+        width: 100%;
+        right: 1%;
     }
 }
+
+.css {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .css {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+}
+
+
+.fixed {}
