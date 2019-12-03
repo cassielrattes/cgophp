@@ -25,7 +25,7 @@ body {
     }
 }
 
-.css {
+.md8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%
@@ -33,12 +33,9 @@ body {
 
 
 @media only screen and (max-width: 1300px) {
-    .css {
+    .md8 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%
     }
 }
-
-
-.fixed {}

@@ -114,7 +114,7 @@ array_splice($portfolios, 0,1);
 
 <div class="ml-5 mr-5">
   <div class="row" id="full">
-    <div class="css">
+    <div class="md8">
       <h1 class="my-4">Ultimas Noticias /
         <small>Edificações</small>
       </h1>
