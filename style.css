@@ -14,18 +14,18 @@ body {
     position: fixed;
     right: 2%;
     width: 30vw;
-    top: 40%;
+    top: 41%;
 }
 
 @media only screen and (max-width: 1300px) {
     #author {
         position: relative;
         width: 100%;
-        right: 1%;
+        right: 0%;
     }
 }
 
-.css {
+.md8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%
@@ -33,12 +33,9 @@ body {
 
 
 @media only screen and (max-width: 1300px) {
-    .css {
+    .md8 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%
     }
 }
-
-
-.fixed {}

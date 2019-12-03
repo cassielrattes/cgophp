@@ -70,6 +70,42 @@ $portfolios = array(
   /* Modal */'#modal6',
   /* ModalId */'modal6'
   ),
+  new Portfolio
+  (
+  /* Titulo */'Atualizando aplicações React Native para a última versão',
+  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
+  /* Descrição */
+  '7',
+  /* Modal */'#modal7',
+  /* ModalId */'modal7'
+  ),
+  new Portfolio
+  (
+  /* Titulo */'Atualizando aplicações React Native para a última versão',
+  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
+  /* Descrição */
+  '8',
+  /* Modal */'#modal8',
+  /* ModalId */'modal8'
+  ),
+  new Portfolio
+  (
+  /* Titulo */'Atualizando aplicações React Native para a última versão',
+  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
+  /* Descrição */
+  '9',
+  /* Modal */'#modal9',
+  /* ModalId */'modal9'
+  ),
+  new Portfolio
+  (
+  /* Titulo */'Atualizando aplicações React Native para a última versão',
+  /* Imagem */'https://www.guiadaengenharia.com/wp-content/uploads/2019/07/or%C3%A7amento-bdi.jpg',
+  /* Descrição */
+  '10',
+  /* Modal */'#modal10',
+  /* ModalId */'modal10'
+  ),
 );
 
 $principal = $portfolios[0];
@@ -113,8 +149,8 @@ array_splice($portfolios, 0,1);
 
 
 <div class="ml-5 mr-5">
-  <div class="row" id="full">
-    <div class="css">
+  <div class="row">
+    <div class="md8">
       <h1 class="my-4">Ultimas Noticias /
         <small>Edificações</small>
       </h1>
@@ -124,10 +160,7 @@ array_splice($portfolios, 0,1);
           <img class="card-img-top subcard" src="<?=$principal->imagem?>" alt="Card image cap">
           <div class="card-body">
             <h2 class="card-title text-center"><?=$principal->titulo?></h2>
-            <div class="text-right">
-              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="<?=$principal->modal?>">Open
-                Modal</button>
-            </div>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="<?=$principal->modal?>">Saiba mais</button>
           </div>
         </div>
 
@@ -144,7 +177,7 @@ array_splice($portfolios, 0,1);
               </div>
               <div class="modal-body">
                 <img class="card-img-top" src="<?=$principal->imagem?>">
-                <p class="card-text text-center"><?=$principal->descricao?></p>
+                <p class="card-text text-center mt-5"><?=$principal->descricao?></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -163,9 +196,8 @@ array_splice($portfolios, 0,1);
           <div>
             <img class="card-img-top" src="<?=$cartao->imagem?>" alt="Card image cap">
             <div class="card-body">
-              <h3 class="card-title"><?=$cartao->titulo?></h3>
-              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="<?=$cartao->modal?>">Open
-                Modal</button>
+              <h5 class="card-title"><?=$cartao->titulo?></h5>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="<?=$cartao->modal?>">Saiba mais</button>
             </div>
 
           </div>
@@ -193,7 +225,7 @@ array_splice($portfolios, 0,1);
     </div>
 
     <div id="author">
-      <div class="card my-4">
+      <!-- <div class="card my-4">
         <h5 class="card-header">Buscar</h5>
         <div class="card-body">
           <div class="input-group">
@@ -203,13 +235,10 @@ array_splice($portfolios, 0,1);
             </span>
           </div>
         </div>
-      </div>
+      </div> -->
 
-
-
-
-      <!-- <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
+      <!-- <div class="card my-2">
+          <h5 class="card-header">Categorias</h5>
           <div class="card-body">
             <div class="row">
               <div class="col-lg-6">
@@ -242,18 +271,12 @@ array_splice($portfolios, 0,1);
           </div>
         </div> -->
 
-      <div class="card my-4">
+      <div class="card my-2">
         <h5 class="card-header">Autor</h5>
         <img class="rounded-circle img-fluid mx-auto mt-3" style="height:150px; width:150px"
           src="https://i.ibb.co/ZJCywsk/Image-URL.jpg">
-        <div class="card-body">
           <h5 class="text-center">Cassiel R. Cortez</h5>
-        </div>
       </div>
-
-
-
-
 
     </div>
   </div>
