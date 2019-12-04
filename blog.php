@@ -124,14 +124,14 @@ array_splice($portfolios, 0,1);
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link h4" href="index.php">Inicio<span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link h4" href="portfolio.php">Aplicativo</a>
+          <a class="nav-link h4" href="index.php">Aplicativo</a>
         </li>
         <li class="nav-item">
           <a class="nav-link h4" href="blog.php">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h4" href="login.php">Login</a>
         </li>
       </ul>
     </div>
