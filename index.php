@@ -1,5 +1,5 @@
 
-<?php include_once('./headFooter/head.php') ?>
+<!-- <?php include_once('./headFooter/head.php') ?>
 
 
 
@@ -34,4 +34,7 @@
 </div>
 
 
-<?php include_once('./headFooter/footer.php') ?>
+<?php include_once('./headFooter/footer.php') ?> -->
+
+
+<?php header('Location: http://localhost:3000') ?>
