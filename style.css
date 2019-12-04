@@ -14,14 +14,14 @@ body {
     position: fixed;
     right: 2%;
     width: 30vw;
-    top: 40%;
+    top: 41%;
 }
 
 @media only screen and (max-width: 1300px) {
     #author {
         position: relative;
         width: 100%;
-        right: 1%;
+        right: 0%;
     }
 }
 
