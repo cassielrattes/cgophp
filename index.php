@@ -54,7 +54,7 @@
 
 <nav class=" my-nav navbar navbar-light navbar-expand-lg ">
   <div class="container">
-    <a class="navbar-brand" href="portfolio.php"><img class="img-fluid rounded-circle"
+    <a class="navbar-brand" href="index.php"><img class="img-fluid rounded-circle"
         src="https://i.ibb.co/Tb1zjpg/Logo-TCC-Bruno.png" alt="Logo da Empresa."></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
