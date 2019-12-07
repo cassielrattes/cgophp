@@ -1,42 +1,61 @@
- Blog:
+ 
+                                                                     Introdução 
+ 
+O Projeto CGO(Controle de Gastos de Obras) é uma ferramenta de auxílio administrativo/de gerenciamento a gastos/custos das Obras.
+Ela surgiu a partir da falta de aplicações como essa no mercado, que influenciam a indústria de construção civil.
+Com essa ferramenta do administrador(Arquiteto, Engenheiro)
+podem inserir e modificar dados dispostos em um painel administrativo que têm interações com um gráfico(Previsto X Real) onde o cliente 
+pode acompanhar em tempo real toda a estrutura administrativa em relação a gastos da sua obra.
 
-     O Blog CGO 
+Nas aulas do professor Fillipe Desenvolvemos um Blog Um portfolio e um site relacionados a projeto CGO.
 
-     O blog é composto por:
-     autenticação de úsuario o usuario irá criar uma conta e efetuara o login.(login).
-     atualização de notícias onde as informações serão atualizadas constantemente é onde setá disposto todo conteudo da página principal. (home).
-     Possuí uma página de contato onde estão dispostos as formas de contato com a empresa. (contato).
+O Site CGO foi desenvolvido para  propagar o aplicativo CGO, contar sobre a história dos desenvolvedores e do desenvolvimento do app,
+também possui um painel administrativo que faz ligação com um gráfico contido no site que mostra dados em tempo real(previsto x Real) dos valores gastos.
+O Blog CGO foi desenvolvido para notificar possíveis atualizações do aplicativo, e também contem um link que redireciona para a instalação (play store em celulares Android e
+Aplle store para IOS´s).
+
+
+ 
+ 
+ 
+ 
+
+
+      O blog é composto por:
+     autenticação de usuário, o usuário irá criar uma conta e efetuara o login.(login).
+     atualização de notícias onde as informações serão atualizadas constantemente é onde será disposto todo conteúdo da página principal. (home).
+     No Footer da página Possuí onde estão dispostos as formas de contato com a empresa.
      Página dedicada as informações da empresa. (sobre).
 
-     
-
+     O site é composto por:
+     Possuí link para as redes socias no footer da página.
+     autenticação de usuário, o usuário irá criar uma conta e efetuara o login.(login).
+     Painel administrativo onde somente os administradores tem acesso para colocar e atualizar dados. 
+     Gráfico que é interligado com o painel administrativo e mostra dados em tempo real aos clientes.
+     informações dos integrantes do projeto.
 
         
-                      
-                      
+                                    
                                        
                        Bugs/Tarefas:
 
-27/11/2019 - 19:27 - lógica do sever - Felipe
-concluido - 29/12/2019 - 22:23.
+27/11/2019 - 19:27 - lógica do server - Felipe
+concluído - 29/12/2019 - 22:23.
 
 28/11/2019 - 20:40 - Erro de Autenticação de login - Felipe
 concluído - 28/11/2019 - 22:34.
 
 28/11/2019 - 22:34 - Navbar/Footer - Cassiel
-concluido - 29/12/2019 - 15:20.
+concluído - 29/12/2019 - 15:20.
 
 02/12/2019 - 19:51 - mal posicionamento dos botões - Cassiel
 concluído - 02/12/2019 - 21:20.
 
 
-02/12/2019 - 19:15 -  Erro na quebra de linha - Cassiel
+02/12/2019 - 19:15 - Erro na quebra de linha - Cassiel
 concluído - 02/12/2019 - 19:50.
 
 
 03/12/2019 - 17:05 - Erro de Responsividade - Cassiel
 concluído - 03/12/2019 - 19:35.
-
-
-
 
